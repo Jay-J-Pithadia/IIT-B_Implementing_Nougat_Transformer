@@ -1,0 +1,52 @@
+## The Postulates of Quantum Mechanics
+
+There are six postulates of quantum mechanics.
+
+### Postulate 1
+
+The state of a quantum mechanical system is completely specified by the function \(\Psi({\bf r},t)\) that depends on the coordinates of the particle, \({\bf r}\) and the time, \(t\). This function is called the wavefunction or state function and has the property that \(\Psi^{*}({\bf r},t)\Psi({\bf r},t)d\tau\) is the probability that the particle lies in the volume element \(d\tau\) located at \({\bf r}\) and time \(t\).
+
+This is the _probabalistic_ interpretation of the wavefunction. As a result the wavefunction must satisfy the condition that finding the particle _somewhere_ in space is 1 and this gives us the normalisation condition,
+
+\[\int_{-\infty}^{+\infty}\Psi^{*}({\bf r},t)\Psi({\bf r},t)d\tau=1\]
+
+The other conditions on the wavefunction that arise from the probabilistic interpretation are that it must be single-valued, continuous and finite. We normally write wavefunctions with a normalisation constant included.
+
+### Postulate 2
+
+To every observable in classical mechanics there corresponds a linear, Hermitian operator in quantum mechanics.
+
+This postulate comes from the observation that the expectation value of an operator that corresponds to an observable must be real and therefore the operator must be Hermitian. Some examples of Hermitian operators are:
+
+\begin{tabular}{l l l l}
+**Observable** & **Classical Symbol** & **Quantum Operator** & **Operation** \\ position & \({\bf r}\) & \(\hat{r}\) & multiply by \({\bf r}\) \\ momentum & \({\bf p}\) & \(\hat{p}\) & \(-i\hbar(\frac{\partial}{\partial x}+\hat{j}\frac{\partial}{\partial y}+\hat{k} \frac{\partial}{\partial z})\) \\ kinetic energy & \(T\) & \(\hat{T}\) & \(\frac{-\hbar^{2}}{2m}(\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}} {\partial y^{2}}+\frac{\partial^{2}}{\partial z^{2}})\) \\ potential energy & \(V({\bf r})\) & \(\hat{V}({\bf r})\) & multiply by \(V({\bf r})\) \\ total energy & \(E\) & \({\cal H}\) & \(\frac{-\hbar^{2}}{2m}(\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}} {\partial y^{2}}+\frac{\partial^{2}}{\partial z^{2}})+V({\bf r})\) \\ angular momentum & \(l_{x}\) & \(\hat{l}_{x}\) & \(-i\hbar(\frac{\partial}{\partial z}-z\frac{\partial}{\partial y})\) \\  & \(l_{y}\) & \(\hat{l}_{y}\) & \(-i\hbar(x\frac{\partial}{\partial x}-x\frac{\partial}{\partial z})\) \\  & \(l_{z}\) & \(\hat{l}_{z}\) & \(-i\hbar(x\frac{\partial}{\partial y}-y\frac{\partial}{\partial x})\) \\ \end{tabular}
+
+### Postulate 3
+
+In any measurement of the observable associated with operator \(\hat{A}\), the only values that will ever be observed are the eigenvalues, \(a\), that satisfy the eigenvalue equation,
+
+\[\hat{A}\Psi=a\Psi\]This is the postulate that the values of dynamical variables are quantized in quantum mechanics (although it is possible to have a continuum of eigenvalues in the case of unbound states). If the system is in an eigenstate of \(\hat{A}\) with eigenvalue \(a\) then any measurement of the quantity \(A\) will always yield the value \(a\).
+
+Although measurement will always yield a value, the initial state does not have to be an eigenstate of \(\hat{A}\). An arbitrary state can be expanded in the complete set of eigenvectors of \(\hat{A}\), \(\hat{A}\Psi_{i}=a_{i}\Psi_{i}\), as
+
+\[\Psi=\sum_{i}^{n}c_{i}\Psi_{i}\]
+
+where \(n\) may go to infinity. In this case measurement of \(A\) will yield _one_ of the eigenvalues, \(a_{i}\), but we don't know which one. The _probability_ of observing the eigenvalue \(a_{i}\) is given by the absolute value of the square of the coefficient, \(|\!|c_{i}|\!|^{2}\). The third postulate also implies that, after the measurement of \(\Psi\) yields some value, \(a_{i}\), the wavefunction _collapses_ into the eigenstate, \(\Psi_{i}\) that corresponds to \(a_{i}\). If \(a_{i}\) is degenerate \(\Psi\) collapses onto the degenerate subspace. Thus the act of measurement affects the state of the system and this has been used in many elegant experimental explorations of quantum mechanics (eg Bell's theorem).
+
+## Postulate 4
+
+If a system is in a state described by the normalised wavefunction, \(\Psi\), then the average value of the observable corresponding to \(\hat{A}\) is given by
+
+\[<\hat{A}>=\int_{-\infty}^{+\infty}\Psi^{*}\hat{A}\Psi d\tau\]
+
+## Postulate 5
+
+The wavefunction or state function of a system evolves in time according to the time-dependent Schrodinger equation
+
+\[{\cal H}\Psi({\bf r},t)=i\hbar\frac{\partial\Psi}{\partial t}\]
+
+## Postulate 6
+
+The total wavefunction must be antisymmetric with respect to the interchange of all coordinates of one fermion with those of another. Electronic spin must be included in this set of coordinates.
+
+The Pauli exclusion principle is a direct result of this _antisymmetry_ postulate.
